@@ -13,12 +13,14 @@ public class QWrong extends AppCompatActivity {
         setContentView(R.layout.activity_qwrong);
 
         TextView ChangeData = findViewById(R.id.AnswerTextWrong);
+        TextView ChangeData2 = findViewById(R.id.YourAnswer);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String Answer = extras.getString("Answer");
             String CAnswer = extras.getString("CAnswer");
-            ChangeData.setText("Ditt svar motsvarar " + Answer + ". Rätt Svar motsvarar " + CAnswer + ".");
+            ChangeData.setText("Rätt Svar motsvarar" + CAnswer + ".");
+            ChangeData2.setText("Ditt svar motsvarar " + Answer + ".");
         }
     }
 }
