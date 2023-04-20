@@ -2,7 +2,10 @@ package com.example.diakoll;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class QRight extends AppCompatActivity {
@@ -21,5 +24,15 @@ public class QRight extends AppCompatActivity {
             ChangeDatan.setText("Du svarade Korrekt");
             ChangeDatan2.setText("Svaret motsvarar" + CAnswer + "." );
         }
+
+        Button nextbtn = (Button) findViewById(R.id.CorrectNext);
+        nextbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Next = new Intent(QRight.this, MainActivity.class);
+                startActivity(Next);
+                setContentView(R.layout.activity_main);
+            }
+        });
     }
 }
