@@ -3,7 +3,7 @@
 # Rapport
 
 Create Buttons
-```java
+```
         Button Rulesbtn = (Button) findViewById(R.id.rulesbtn);
         Rulesbtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -15,7 +15,7 @@ Create Buttons
 ```
 
 Input Data To Send While AnswerButton Pushed 
-```java
+```
         Intent RightA1 = new Intent(Q1.this, QRight.class);
         RightA1.putExtra("Answer", "Answer"); // Optional
         RightA1.putExtra("CAnswer", "CAnswer"); // Optional
@@ -23,7 +23,7 @@ Input Data To Send While AnswerButton Pushed
 ```
 
 Collect Data From Answerbutton. Print into textview inside WrongPage.xml
-```java
+```
         TextView ChangeData = findViewById(R.id.AnswerTextWrong);
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
