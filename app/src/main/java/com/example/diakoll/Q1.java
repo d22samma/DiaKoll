@@ -29,9 +29,10 @@ public class Q1 extends AppCompatActivity {
         q1a1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Q1.this, QRight.class);
-
-                startActivity(intent);
+                Intent RightA1 = new Intent(Q1.this, QRight.class);
+                RightA1.putExtra("Answer", "Answer"); // Optional
+                RightA1.putExtra("CAnswer", "CAnswer"); // Optional
+                startActivity(RightA1);
                 setContentView(R.layout.activity_qright);
 
             }
@@ -41,9 +42,10 @@ public class Q1 extends AppCompatActivity {
         q1a2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Q1.this, QWrong.class);
-
-                startActivity(intent);
+                Intent WrongA2 = new Intent(Q1.this, QWrong.class);
+                WrongA2.putExtra("Answer", "Answer2"); // Optional
+                WrongA2.putExtra("CAnswer", "CAnswer2"); // Optional
+                startActivity(WrongA2);
                 setContentView(R.layout.activity_qwrong);
 
             }
@@ -53,11 +55,11 @@ public class Q1 extends AppCompatActivity {
         q1a3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Q1.this, QWrong.class);
-
-                startActivity(intent);
+                Intent WrongA3 = new Intent(Q1.this, QWrong.class);
+                WrongA3.putExtra("Answer", "Answer3"); // Optional
+                WrongA3.putExtra("CAnswer", "CAnswer3"); // Optional
+                startActivity(WrongA3);
                 setContentView(R.layout.activity_qwrong);
-
             }
         });
 
@@ -65,9 +67,10 @@ public class Q1 extends AppCompatActivity {
         q1a4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Q1.this, QWrong.class);
-
-                startActivity(intent);
+                Intent WrongA4 = new Intent(Q1.this, QWrong.class);
+                WrongA4.putExtra("Answer", "Answer4"); // Optional
+                WrongA4.putExtra("CAnswer", "CAnswer4"); // Optional
+                startActivity(WrongA4);
                 setContentView(R.layout.activity_qwrong);
 
             }
