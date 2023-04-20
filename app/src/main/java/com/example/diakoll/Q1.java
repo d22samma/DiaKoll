@@ -30,6 +30,7 @@ public class Q1 extends AppCompatActivity {
         q1a1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                globalData.setNumber(globalData.getNumber() +1);
                 Intent RightA1 = new Intent(Q1.this, QRight.class);
                 RightA1.putExtra("Answer", "Answer"); // Optional
                 RightA1.putExtra("CAnswer", "CAnswer"); // Optional
