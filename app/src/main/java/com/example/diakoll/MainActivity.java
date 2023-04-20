@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
+    private GlobalData globalData = GlobalData.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

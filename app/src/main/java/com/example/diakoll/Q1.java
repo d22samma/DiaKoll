@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.Button;
 
 public class Q1 extends AppCompatActivity {
-
+    private GlobalData globalData = GlobalData.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_q1);
-
+        globalData.setNumber(globalData.getNumber() +1);
+        GlobalData.getInstance().incrementNumber();
         Button button = (Button) findViewById(R.id.q1cancel);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
